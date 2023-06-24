@@ -30,10 +30,9 @@ import './editor.scss';
  * @return {WPElement} Element to render.
  */
 export default function Edit() {
-	const x = 0;
 	return (
-		<p {...useBlockProps()}>
-			{__('Boilerplate – hello from the editor!', 'boilerplate')}
+		<p { ...useBlockProps() }>
+			{ __( 'Boilerplate – hello from the editor!', 'boilerplate' ) }
 		</p>
 	);
 }
