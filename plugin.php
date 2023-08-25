@@ -1,7 +1,7 @@
 <?php
 /**
- * Plugin Name:       Boilerplate
- * Description:       Example block scaffolded with Create Block tool.
+ * Plugin Name:       Blocks Course - Todo List
+ * Description:       Blocks Course - Todo List.
  * Requires at least: 6.1
  * Requires PHP:      7.0
  * Version:           0.1.0
@@ -20,7 +20,9 @@
  *
  * @see https://developer.wordpress.org/reference/functions/register_block_type/
  */
-function create_block_boilerplate_block_init() {
-	register_block_type( __DIR__ . '/build' );
+function blocks_course_todo_list_block_init(): void
+{
+	register_block_type(__DIR__ . '/build');
 }
-add_action( 'init', 'create_block_boilerplate_block_init' );
+
+add_action('init', 'blocks_course_todo_list_block_init');
